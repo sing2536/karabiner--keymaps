@@ -1,2 +1,3 @@
 # karabiner--keymaps
-Karabiner custom key remap for Mac
+File location ~/.config/karabiner/karabiner.json
+
