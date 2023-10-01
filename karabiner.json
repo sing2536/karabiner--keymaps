@@ -250,7 +250,29 @@
                                 ],
                                 "type": "basic"
                             },
-
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "caps_lock pressed",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "delete_forward",
+                                    "modifiers": {
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "software_function": {
+                                            "iokit_power_management_sleep_system": {}
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "conditions": [
                                     {
